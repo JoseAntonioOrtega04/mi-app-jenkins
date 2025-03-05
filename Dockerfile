@@ -14,5 +14,5 @@ RUN pip install --no-cache-dir -r requirements.txt || true
 EXPOSE 80
 
 # Comando para ejecutar la aplicación
-CMD ["python", "-m", "http.server", "80"]
+CMD ["python", "app.py"]
 
