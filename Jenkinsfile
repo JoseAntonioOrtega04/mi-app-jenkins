@@ -2,7 +2,10 @@ pipeline {
     agent any
     environment {
         IMAGE_NAME = 'mi-aplicacion'
-        DOCKER_HUB_USER = 'orteg44'  
+        DOCKER_HUB_USER = 'orteg44'
+    }
+    triggers {
+        githubPush()
     }
     stages {
         stage('Clonar Código') {
