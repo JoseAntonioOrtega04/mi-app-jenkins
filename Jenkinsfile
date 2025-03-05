@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clonar Código') {
             steps {
-                git branch: 'main', url: 'https://github.com/TU_USUARIO/mi-app-jenkins.git'
+                git branch: 'main', url: 'https://github.com/JoseAntonioOrtega04/mi-app-jenkins.git'
             }
         }
         stage('Ejecutar Script') {
